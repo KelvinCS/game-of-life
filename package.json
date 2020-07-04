@@ -1,0 +1,23 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "A simple conway's game of life with p5js",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@types/p5": "0.9.0",
+    "p5": "0.9.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1",
+    "sass": "^1.26.9",
+    "typescript": "^3.9.6"
+  },
+  "keywords": [
+    "p5js",
+    "typescript"
+  ]
+}
