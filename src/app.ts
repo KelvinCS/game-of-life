@@ -30,12 +30,12 @@ const game = new Game({
 
 const sketch = (p5: P5) => {
 
-	p5.setup = () => {
-		p5.createCanvas(1000, 600)
-            .parent("app");
+    p5.setup = () => {
+        p5.createCanvas(1000, 600)
+        .parent("app");
 
         p5.frameRate(10);
-	};
+    };
 
     p5.mousePressed = () => {
         const x = Math.floor(p5.mouseX / cellSize);
@@ -46,11 +46,11 @@ const sketch = (p5: P5) => {
 
     p5.keyPressed = () => {
         if (p5.keyCode !== p5.ENTER) return;
-        
+
         enableEvolution = !enableEvolution;
     }
 
-	p5.draw = () => {
+    p5.draw = () => {
         if (enableEvolution) game.nextGeneration();
 
         p5.background('white');
@@ -60,7 +60,7 @@ const sketch = (p5: P5) => {
             createCell(coords, cellSize, p5); 
         })
 
-	};
+    };
 };
 
 new P5(sketch);
